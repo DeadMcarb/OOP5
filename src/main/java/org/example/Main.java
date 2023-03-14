@@ -27,12 +27,12 @@ public class Main {
 
             switch (printMenu()) {
                 case 1 -> {
-                    int[] array = reader.readOneDimensionalArray("f.txt");
+                    int[] array = reader.readOneDimensionalArray("51.txt");
                     int result = processor.calculate(array);
                     System.out.println("Сума елементів масиву між першим та останнім від’ємними = " + result);
                 }
                 case 2 -> {
-                    int[][] array = reader.readTwoDimensionalArray("lab52.txt");
+                    int[][] array = reader.readTwoDimensionalArray("52.txt");
                     int result = processor.calculate(array);
                     System.out.println("Сума найбільшого та найменшого елементів у заштрихованій частині = " + result);
                 }

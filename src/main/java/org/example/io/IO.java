@@ -5,25 +5,6 @@ import java.util.Scanner;
 
 public class IO implements ArrayReader {
 
-//    @Override
-//    public int[] readOneDimensionalArray(String fileName) {
-//        try (BufferedReader in = new BufferedReader(new
-//                FileReader(fileName))) {
-//            in.readLine();
-//            String[] line = in.readLine().trim().split(" +");
-//            int[] array = new int[line.length];
-//            for (int j = 0; j < line.length; j++) {
-//                array[j] = Integer.parseInt(line[j]);
-//            }
-//            return array;
-//        } catch (FileNotFoundException e) {
-//            System.out.println("Файл не найден");
-//            return new int[0];
-//        } catch (IOException e) {
-//            return new int[0];
-//        }
-//    }
-
     @Override
     public int[] readOneDimensionalArray(String fileName) {
         try (Scanner in = new Scanner(new File(fileName))) {
@@ -59,17 +40,6 @@ public class IO implements ArrayReader {
             return new int[0][0];
         }
     }
-
-
-//    @Override
-//    public int[] readOneDimensionalArray(File file) {
-//        return new int[0];
-//    }
-//
-//    @Override
-//    public int[][] readTwoDimensionalArray(File file) {
-//        return new int[0][];
-//    }
 }
 
 
